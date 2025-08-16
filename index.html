@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional optimization services for websites, code, and performance">
+    <meta name="keywords" content="optimization, performance, SEO, code optimization, website speed">
+    <title>OptiFlow - Professional Optimization Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-rocket"></i>
+                <span>OptiHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Optimize Everything</h1>
+                <p>Transform your digital presence with cutting-edge optimization strategies. From code to performance, we make it faster, better, and more efficient.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('tools')">
+                        <i class="fas fa-tools"></i>
+                        Try Our Tools
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('services')">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="optimization-graph">
+                    <div class="graph-bar" data-value="85"></div>
+                    <div class="graph-bar" data-value="92"></div>
+                    <div class="graph-bar" data-value="78"></div>
+                    <div class="graph-bar" data-value="95"></div>
+                    <div class="graph-bar" data-value="88"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Optimization Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Code Optimization</h3>
+                    <p>Clean, efficient, and maintainable code that runs faster and uses fewer resources.</p>
+                    <ul>
+                        <li>Performance analysis</li>
+                        <li>Refactoring</li>
+                        <li>Best practices</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Speed up your applications and websites with proven optimization techniques.</p>
+                    <ul>
+                        <li>Load time reduction</li>
+                        <li>Resource optimization</li>
+                        <li>Performance monitoring</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your search engine rankings and online visibility.</p>
+                    <ul>
+                        <li>Keyword optimization</li>
+                        <li>Content strategy</li>
+                        <li>Technical SEO</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Optimization</h3>
+                    <p>Ensure your digital products work perfectly on all devices.</p>
+                    <ul>
+                        <li>Responsive design</li>
+                        <li>Mobile-first approach</li>
+                        <li>Touch optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2>Optimization Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Performance Analyzer</h3>
+                    <div class="tool-input">
+                        <input type="url" id="url-input" placeholder="Enter website URL">
+                        <button onclick="analyzePerformance()">Analyze</button>
+                    </div>
+                    <div id="performance-results" class="tool-results"></div>
+                </div>
+                
+                <div class="tool-card">
+                    <h3>Code Optimizer</h3>
+                    <div class="tool-input">
+                        <textarea id="code-input" placeholder="Paste your code here..."></textarea>
+                        <button onclick="optimizeCode()">Optimize</button>
+                    </div>
+                    <div id="code-results" class="tool-results"></div>
+                </div>
+                
+                <div class="tool-card">
+                    <h3>SEO Checker</h3>
+                    <div class="tool-input">
+                        <input type="text" id="seo-input" placeholder="Enter keyword or phrase">
+                        <button onclick="checkSEO()">Check</button>
+                    </div>
+                    <div id="seo-results" class="tool-results"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About OptiFlow</h2>
+                    <p>We're passionate about optimization. Our team of experts combines technical knowledge with creative problem-solving to deliver exceptional results.</p>
+                    <p>With years of experience in digital optimization, we've helped hundreds of businesses improve their performance, user experience, and bottom line.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projects Optimized</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Performance Improvement</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="optimization-process">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Analyze</h4>
+                                <p>Deep dive into your current state</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Optimize</h4>
+                                <p>Implement proven solutions</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Monitor</h4>
+                                <p>Track improvements over time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>btech60161.23@bitmesra.ac.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9504211256</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Deoghar, Jharkhand</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>OptiFlow</h3>
+                    <p>Making optimization simple and effective.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Code Optimization</a></li>
+                        <li><a href="#services">Performance</a></li>
+                        <li><a href="#services">SEO</a></li>
+                        <li><a href="#services">Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 OptiFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
